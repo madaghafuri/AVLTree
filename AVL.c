@@ -112,7 +112,7 @@ void preorder(struct node *r){
     preorder(r->right);
 }
 
-void searchNode(node *r, int value){
+void searchNode(struct node *r, int value){
     if(r == NULL) return;
     searchNode(r -> left, value);
     if(r -> data == value){
